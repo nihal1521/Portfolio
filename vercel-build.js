@@ -21,6 +21,6 @@ try {
   }
 }
 
-// Run the build step
+// Run the build step with CI=false to prevent treating warnings as errors
 console.log("📦 Running build...");
-execSync("react-scripts build", { stdio: "inherit" });
+execSync("CI=false react-scripts build", { stdio: "inherit" });
