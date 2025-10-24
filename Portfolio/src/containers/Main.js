@@ -7,7 +7,6 @@ import { splashScreen } from "../portfolio"; // Remove this import statement
 // import Achievement from "./achievement/Achievement";
 
 // Ensure you import the correct components
-import Blogs from "./blogs/Blogs";
 import Education from "./education/Education";
 import Greeting from "./greeting/Greeting";
 import "./Main.scss";
@@ -17,6 +16,7 @@ import StackProgress from "./skillProgress/skillProgress";
 import Skills from "./skills/Skills";
 import SplashScreen from "./splashScreen/SplashScreen";
 import StartupProject from "./StartupProjects/StartupProject";
+import ResearchPapers from "./researchPapers/ResearchPapers";
 import ScrollToTopButton from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 
@@ -56,7 +56,7 @@ const Main = () => {
             <Education />
             <Projects />
             <StartupProject />
-            <Blogs />
+            <ResearchPapers />
             <Twitter />
             <Profile />
             <Footer />

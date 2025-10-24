@@ -1,6 +1,3 @@
-/* Change this file to get your personal Portfolio */
-
-// To change portfolio colors globally go to the  _globalColor.scss file
 
 import React from "react";
 import emoji from "react-easy-emoji";
@@ -10,7 +7,7 @@ import Greeting from "./components/greeting/Greeting"; // Ensure the correct pat
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: false, // set false to disable splash screen
   animation: splashAnimation,
   duration: 2000 // Set animation duration as per your animation
 };
@@ -22,108 +19,44 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Nihal Thangallapally",
-  title: "Hi all, I'm Nihal",
+  username: "Aishwarya Sriramula",
+  title: "Hi, I'm Aishwarya",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "To leverage my strong analytical and problem-solving skills developed through civil engineering, along with growing expertise in software development, to build scalable, technology-driven solutions that address real-world challenges."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1cS38JCHC_x1r8nlEsUJolHYrn51JF7Z_/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "", // add resume link here if available
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/nihal1521",
-  linkedin: "https://www.linkedin.com/in/nihal-thangallapally/",
-  gmail: "nihalthangallapally1@outlook.com",
-  gitlab: "https://gitlab.com/nihal1521",
-  medium: "https://medium.com/@nihalthangallapally123",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
+  linkedin: "https://www.linkedin.com/in/sriramula-aishwarya-503190339/", 
+  gmail: "aishusriramula695@gmail.com",
   display: true // Set true to display this section, defaults to false
 };
 
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "Skills & Tools",
+  subTitle: "Civil engineering background with growing software development skills",
   skills: [
-    emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji("⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean")
+    emoji("⚡ Strong analytical thinking and problem-solving applied to engineering and software"),
+    emoji("⚡ Project management, site surveying and structural analysis"),
+    emoji("⚡ Experience with AutoCAD, STAAD.Pro, MATLAB and engineering workflows")
   ],
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "MongoDB",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "MySQL",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "PostgreSQL",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "SQLite",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "Java", fontAwesomeClassname: "fab fa-java" },
+    { skillName: "C/C++", fontAwesomeClassname: "fas fa-code" },
+    { skillName: "HTML5", fontAwesomeClassname: "fab fa-html5" },
+    { skillName: "CSS3", fontAwesomeClassname: "fab fa-css3-alt" },
+    { skillName: "AutoCAD", fontAwesomeClassname: "fas fa-drafting-compass" },
+    { skillName: "STAAD.Pro", fontAwesomeClassname: "fas fa-building" },
+    { skillName: "MATLAB", fontAwesomeClassname: "fas fa-calculator" },
+    { skillName: "MS Project", fontAwesomeClassname: "fas fa-tasks" },
+    { skillName: "Git / GitHub", fontAwesomeClassname: "fab fa-github" }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -134,16 +67,22 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "SR University",
-      logo: require("./assets/images/sr_university.jpeg"),
-      subHeader: "Batchlor of Technology in Computer Science Engineering with Specialization in Artificial Intelligence and Machine Learning",
-      duration: "November 2021 - May 2025",
+      schoolName: "SR University, Telangana, India",
+      // logo: require("./assets/images/sr_university.jpeg"),
+      subHeader: "Bachelor of Technology in Civil Engineering | CGPA: 8.5",
+      duration: "2023 - 2026"
     },
     {
-      schoolName: "SR Junior College",
-      logo: require("./assets/images/sr prime.jpg"),
-      subHeader: "MPC",
-      duration: "June 2019 - June 2021",
+      schoolName: "VMR Polytechnic College",
+      // logo: require("./assets/images/vmr_polytechnic.jpg"),
+      subHeader: "Diploma in Civil Engineering | CGPA: 7.4",
+      duration: "2020 - 2023"
+    },
+    {
+      schoolName: "St. Joseph High School",
+      // logo: require("./assets/images/st_joseph.jpg"),
+      subHeader: "SSC | GPA: 10",
+      duration: "2020"
     }
   ]
 };
@@ -178,31 +117,31 @@ const openSource = {
 };
 
 // Some big projects you have worked on
-
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "Selected academic and design projects",
   projects: [
     {
-      image: require("./assets/images/trafficSignDetectionLogo.webp"), // Update with the correct image path
-      projectName: "AI Powered Traffic Sign Detection",
-      projectDesc: "Traffic sign detection for autonomous vehicles using Raspberry Pi and OpenCV.",
+      // image: require("./assets/images/traffic_reducing.jpg"),
+      projectName: "Traffic Reducing System",
+      projectDesc:
+        "A hydraulically operated footpath that lowers to road level to create an extra lane during emergencies (ambulances, fire trucks). Design uses Pascal's Law and fluid-mechanical actuation for quick deployment; intended for integration during new road construction.",
       footerLink: [
         {
-          name: "Visit Project",
-          url: "https://github.com/nihal1521/Traffic-Sign-Recognization-Using-Raspberry-pi"
+          name: "Project Description",
+          url: ""
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/expenseTrackerLogo.webp"), // Update with the correct image path
-      projectName: "Expense Tracker",
-      projectDesc: "A web application to track your expenses and manage your budget efficiently.",
+      // image: require("./assets/images/skybus.jpg"),
+      projectName: "SKYBUS Technology",
+      projectDesc:
+        "Design of an elevated, automated mass-transport system (Skybus) providing driverless operations, electric propulsion, elevated tracks and smart energy management to reduce urban congestion and construction costs.",
       footerLink: [
         {
-          name: "Visit Project",
-          url: "https://github.com/nihal1521/Expense_Tracker" // Update with the correct URL
+          name: "Project Description",
+          url: ""
         }
       ]
     }
@@ -210,52 +149,61 @@ const bigProjects = {
   display: true // Set false to hide this section, defaults to true
 };
 
-// Blogs Section
-
-const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
+// Research Papers Section
+const researchPapers = {
+  title: "Research Papers",
+  subtitle: "Selected research work and publications",
+  papers: [
     {
-      url: "https://medium.com/@nihalthangallapally123/ai-powered-traffic-sign-recognization-using-raspberry-pi-de592bfbba1f",
-      title: "AI Powered Traffic Sign Recognization using Raspberry Pi",
+      title: "Development of Advanced Construction Materials",
       description:
-        "Traffic sign detection for autoomus vechicle using Raspberry Pi and OpenCV",
+        "Research focused on developing sustainable and high-performance construction materials using alternative binders and supplementary cementitious materials.",
+      url: "",
+      authors: "Aishwarya Sriramula"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section
 };
 
 // Resume Section
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-  resumeLink: "https://drive.google.com/file/d/1cS38JCHC_x1r8nlEsUJolHYrn51JF7Z_/view?usp=sharing",
-  display: true // Set false to hide this section, defaults to true
+  resumeLink: "",
+  display: false // hide until a resume link is provided
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+91-8074572255",
-  email_address: "nihalthangallapally1@outlook.com"
+  subtitle: "Discuss a project or just want to say hi — I'm open to collaborations.",
+  email_address: "aishusriramula695@gmail.com",
+  location: "Warangal, Telangana, India"
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "nihal_1521", //Replace "twitter" with your twitter username without @
+  userName: "aishwarya_sriramula", //Replace "twitter" with your twitter username without @
   display: true // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
-  bigProjects, blogSection, contactInfo, educationInfo, greeting, illustration, isHireable, openSource, resumeSection, skillsSection, socialMediaLinks,
-  splashScreen, techStack, twitterDetails
+  bigProjects,
+  researchPapers,
+  contactInfo,
+  educationInfo,
+  greeting,
+  illustration,
+  isHireable,
+  openSource,
+  resumeSection,
+  skillsSection,
+  socialMediaLinks,
+  splashScreen,
+  techStack,
+  twitterDetails
 };
 
 const Main = () => {

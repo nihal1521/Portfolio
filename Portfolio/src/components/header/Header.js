@@ -2,12 +2,12 @@ import React, { useContext } from "react";
 import Headroom from "react-headroom";
 import StyleContext from "../../contexts/StyleContext";
 import {
-  blogSection,
   greeting,
   openSource,
   resumeSection,
   skillsSection
 } from "../../portfolio";
+import { researchPapers } from "../../portfolio";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import "./Header.scss";
 
@@ -15,8 +15,8 @@ function Header() {
   const {isDark} = useContext(StyleContext);
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
-  const viewBlog = blogSection.display;
   const viewResume = resumeSection.display;
+  const viewResearch = researchPapers && researchPapers.display;
 
   return (
     <Headroom>
@@ -45,14 +45,15 @@ function Header() {
               <a href="#opensource">Open Source</a>
             </li>
           )}
-          {viewBlog && (
-            <li>
-              <a href="#blogs">Blogs</a>
-            </li>
-          )}
+          {/* Blogs removed */}
           {viewResume && (
             <li>
               <a href="#resume">Resume</a>
+            </li>
+          )}
+          {viewResearch && (
+            <li>
+              <a href="#research-papers">Research Papers</a>
             </li>
           )}
           <li>

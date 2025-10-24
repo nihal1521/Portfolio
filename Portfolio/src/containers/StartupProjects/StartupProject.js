@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
-import {Fade} from "react-reveal";
+import {Zoom} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
@@ -18,7 +18,7 @@ export default function StartupProject() {
     return null;
   }
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <Zoom duration={800}>
       <div className="main" id="projects">
         <div>
           <h1 className="skills-heading">{bigProjects.title}</h1>
@@ -89,6 +89,6 @@ export default function StartupProject() {
           </div>
         </div>
       </div>
-    </Fade>
+    </Zoom>
   );
 }
